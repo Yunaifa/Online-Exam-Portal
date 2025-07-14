@@ -1,0 +1,264 @@
+
+/* Login Page starts here */
+.body { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;         
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;                    
+}
+.container {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  width: 90%;
+  max-width: 900px;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin: 50px auto;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.form{
+    background-color:#111;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.welcome{
+    background-color: rgb(104, 15, 104);
+    
+    padding: 30px;
+    border-radius: 5%;    
+}
+.welcome img{
+    width: 150px;
+    height: auto;   
+}
+.login-button{
+  width: 70%;
+  padding: 10px;
+  background-color: #6a1b9a; 
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+  margin: 10px auto;
+  display: block;
+}
+.form a{
+    text-decoration: none;
+    text-align: center;
+}
+.login-button:hover {
+  background-color: #4a148c; 
+}
+@media (max-width:768px) {
+  .container{
+    flex-direction: column;
+
+  }
+  .form, .welcome{
+    width: 100%;
+  }
+
+  .welcome img{
+    max-width: 200px;
+  }
+}
+/* ----End of login page---- */
+
+/* Instructions page start here */
+
+.instruction-page{
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: white;
+  height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.crimson-text-regular-italic {
+  font-family: "Crimson Text", serif;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.header{
+  background-color:rgb(104, 15, 104);
+  color: white;
+
+  text-align: center;
+  padding: 30px;
+  margin:0;
+}
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main-content {
+  background-color: rgba(255, 255, 255, 0.05); 
+  padding: 10px 30px;
+  margin: 10px auto;       
+  width: 80%;
+  max-width: 600px;        
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.instruction-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  margin-right: 70px;
+  text-align: center;
+}
+.start-button{
+
+  padding: 12px 28px;
+  background-color: #6a1b9a; 
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  
+}
+.button a{
+  text-decoration: none;
+  
+}
+.start-button:hover {
+  background-color: #4a148c; 
+}
+
+
+@media (max-width: 768px) {
+  .main-content {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .instruction-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 1.4rem;
+    padding: 20px 0;
+  }
+
+  .crimson-text-regular-italic h4,
+  .crimson-text-regular-italic p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .instruction-content h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .button {
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  .start-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+/* End of instruction page */
+
+/* Exam page starts here */
+.exam-page{
+  margin:0;
+  padding:0;
+}
+.eb-garamond-uniquifier {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.test-header{
+  background-color:rgb(104, 15, 104);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 3px ;
+}
+.test-info{
+  text-align: center;
+  font-size: 1.3rem;
+
+}
+.questions{
+  background-color: #111;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 8px;
+
+}
+.option{
+  list-style: none;
+
+}
+.option li{
+  padding: 5px;
+ 
+}
+.submit-button{ 
+  padding: 10px;
+  background-color: #6a1b9a; 
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  
+  margin: 20px auto;
+  width: fit-content;
+
+
+  text-align: center;
+}
+.submit-button:hover{
+  background-color: #4a148c;
+}
+
+  
